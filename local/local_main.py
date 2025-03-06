@@ -3,9 +3,9 @@ import dask.dataframe as dd
 from timeit import default_timer as timer
 
 start = timer()
-cdinfo = dd.read_csv('cdinfo.txt', blocksize=100e6, names=['base', 'time', 'inorout', 'telephone'])
+cdinfo = dd.read_csv('./data/cdinfo.txt', blocksize=100e6, names=['base', 'time', 'inorout', 'telephone'])
 
-infected = pd.read_csv('infected.txt', names=['telephone'])
+infected = pd.read_csv('./data/infected.txt', names=['telephone'])
 infected_list = list(set(infected["telephone"].tolist()))
 cdinfo_infected = cdinfo.loc[cdinfo["telephone"].isin(infected_list)]
 
@@ -72,7 +72,7 @@ final = list(set(superredmark_df["telephone"].tolist()))
 final.sort()
 
 # write to superredmark.txt
-with open('redmark.txt', 'w') as fp:
+with open('./result/redmark.txt', 'w') as fp:
     for item in final:
         # write each item on a new line
         fp.write("%s\n" % item)
