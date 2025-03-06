@@ -1,5 +1,5 @@
 # **RedMark-Project**
-Big Data Computing Practice Project: Epidemic Red Mark Labeling.
+Big Data Computing Project: Epidemic Red Mark Labeling.
 
 ## **Objects**
 **THE MORE ACCURATE,THE BETTER. THE FASTER, THE BETTER.**
