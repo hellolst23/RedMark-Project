@@ -12,6 +12,6 @@ In ./local:
 python local_main.py
 ```
 
-### II.Computing with **hadoop** and **spark distributed cluster**.
+### II.Computing with **hadoop** and **spark distributed clusters**.
 #### Cluster building.
 
