@@ -8,6 +8,10 @@ Red-labeling of health codes based on incoming and outgoing base station data fr
 
 ## **Solutions**
 ### I.Accelerated computation **locally** with the python **dask library**.
+#### Requirement:
+```bash
+pip install dask
+```
 #### Quick start:
 In ./local:
 ```bash
